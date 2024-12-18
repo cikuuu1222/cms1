@@ -60,7 +60,7 @@
           </a>
         </li>
         <li class="nav-item">
-        <?php if($this->session->userdata('level')=='Admin'){?>
+        
               <li class="menu-item <?php if($menu=='user') {echo "active";}?>">
           <a class="nav-link text-white " href="<?= base_url('admin/user')?>">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -78,7 +78,7 @@
             <span class="nav-link-text ms-1">Konfigurasi</span>
           </a>
         </li>
-        <?php }?>
+       
         <li class="nav-item">
         <li class="menu-item <?php if($menu=='konten') {echo "active";}?>">
           <a class="nav-link text-white " href="<?= base_url('admin/konten')?>">

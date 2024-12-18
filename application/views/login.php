@@ -38,6 +38,7 @@
 
 <body class="bg-gray-200">
   <main class="main-content  mt-0">
+    <?= $this->session->flashdata('alert',true) ?>
     <div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container my-auto">
@@ -70,11 +71,11 @@
                 <form role="form" class="text-start" action="<?= base_url('auth/login')?>" method="POST">
                   <div class="input-group input-group-outline my-3">
                     <label class="form-label">Username</label>
-                    <input type="text" class="form-control" name="username"  autofocus>
+                    <input type="text" class="form-control" name="username"  >
                   </div>
                   <div class="input-group input-group-outline mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                    <input type="password" class="form-control" name="password" />
                 <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                  
